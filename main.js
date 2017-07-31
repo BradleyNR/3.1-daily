@@ -111,6 +111,9 @@ if (formData[i].type === 'text' || formData[i].type === 'tel' || formData[i].typ
 var newInput = document.createElement(formData[i].type);
 var optionsSelect = formData[i].options;
 var backgroundImageFa = formData[i].icon; //might not need
+var optionPlaceholder = document.createElement('option');
+newInput.appendChild(optionPlaceholder);
+optionPlaceholder.textContent = formData[4].label;
 
 //dropdown menu
 for (x = 0; x < optionsSelect.length; x++) {
@@ -123,13 +126,15 @@ for (x = 0; x < optionsSelect.length; x++) {
 }
 //creating forms
 newInput.placeholder = formData[i].label;
-
+//appends input
 mainContainer.appendChild(newInput);
 
-var createImage = document.createElement('i');
+var imageIcons = document.createElement('i');
+//appends Img tags and sets classes
+imageIcons.className = 'fa ' + backgroundImageFa;
+mainContainer.appendChild(imageIcons);
 
-newInput.appendChild(createImage);
-
+// var imgTags = document.querySelector('Img');
 
 
 }

@@ -25,25 +25,32 @@
   padding: 25px;
 }
 
-.wrapper .fields input,
-.wrapper .fields textarea,
-.wrapper .fields select
- {
-  padding-left: 15px;
+.wrapper .fields input, .wrapper .fields textarea {
+  padding-left: 25px;
   width: 500px;
   height: 35px;
   border: 2px solid #CCD1D4;
   border-radius: 3px;
   margin: 10px;
   font-size: 15px;
+  padding-right: 60px;
+}
+
+.wrapper .fields select {
+  padding-left: 25px;
+  height: 35px;
+  border: 2px solid #CCD1D4;
+  margin: 10px;
+  width: 590px;
 }
 
 .wrapper .fields textarea {
   height: 125px;
   padding: 15px;
+  padding-right: 60px;
 }
 
-.wrapper .footer {
+.wrapper .field .wrapper .footer {
   background-color: #C8DEF1;
   padding: 15px;
 }
@@ -56,4 +63,19 @@
   border: 1px solid #267BC5;
   border-radius: 3px;
   font-size: 15px;
+}
+
+i {
+  position: relative;
+  right: 590px;
+  color: #989B9D;
+}
+
+#fields>i.fa.fa-comments {
+  bottom: 139px;
+  right: 590px;
+}
+
+#fields>textarea {
+  padding-left: 25px;
 }
